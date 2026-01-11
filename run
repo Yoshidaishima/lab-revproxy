@@ -1,0 +1,10 @@
+#podman run -d \
+podman run \
+  --name nginx-certbot \
+  --replace \
+  -p 8080:80 \
+  -p 8443:443 \
+  --env-file nginx-certbot.env \
+  -v $(pwd)/nginx_secrets:/etc/letsencrypt \
+  -v $(pwd)/user_conf.d:/etc/nginx/user_conf.d:ro \
+  docker.io/jonasal/nginx-certbot:latest
