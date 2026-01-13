@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+podman stop nginx-certbot && podman rm nginx-certbot

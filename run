@@ -1,5 +1,6 @@
-#podman run -d \
-podman run \
+#!/usr/bin/env bash
+#podman run \
+podman run -d \
   --name nginx-certbot \
   --replace \
   -p 8080:80 \
