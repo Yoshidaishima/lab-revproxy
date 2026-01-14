@@ -8,4 +8,5 @@ podman run -d \
   --env-file nginx-certbot.env \
   -v $(pwd)/nginx_secrets:/etc/letsencrypt \
   -v $(pwd)/user_conf.d:/etc/nginx/user_conf.d:ro \
+  -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf \
   docker.io/jonasal/nginx-certbot:latest
