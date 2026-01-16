@@ -1,4 +1,4 @@
-# Proxy
+# Proxy with Nginx
 ## About
 Nginx reverse proxy with lets encrypt certbot
 
@@ -8,6 +8,7 @@ Nginx reverse proxy with lets encrypt certbot
 ## Usage
 
 - Need to run as root
+  - Needs sudo permissions to write certs
 - Pod will only show up under root
   - Podman is user based
 
